@@ -113,25 +113,6 @@
 
 
 
-/* Media Queries */
-@media (max-width: 1200px) {
-    .container-inputs {
-        width: 400px;
-    }
-
-    .input input {
-        width: 250px;
-    }
-
-    .info-box {
-        margin-right: 40px;
-    }
-
-    .container {
-        margin-left: 40px;
-    }
-}
-
 @media (min-width: 768px ) and (max-width: 1024px) {
     .main-sign {
         flex-direction: row;
