@@ -37,7 +37,8 @@ app.use(express.urlencoded({extended: false}))
 app.use(
     cors({
         credentials: true,
-        origin: 'http://localhost:3000'
+        /* origin: 'http://localhost:3000' */
+        origin: 'https://course-finder-app-2.onrender.com'
     })
 )
 
