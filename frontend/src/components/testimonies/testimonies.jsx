@@ -19,7 +19,7 @@ export default function Testimonies ({ _id, title, summary, files, category, des
 
     const fetchPostData = async () => {
         try {
-            const response = await axios.get(`http://localhost:4000/post/${_id}`);
+            const response = await axios.get(`https://course-finder-app.onrender.com/post/${_id}`);
             const postData = response.data;
             setLiked(postData.liked);
             setLikeCountState(postData.likeCount);
@@ -31,7 +31,7 @@ export default function Testimonies ({ _id, title, summary, files, category, des
     const handleLike = async () => {
         try {
             const response = await axios.post(
-                `http://localhost:4000/post/${_id}`,
+                `https://course-finder-app.onrender.com/post/${_id}`,
                 {},
                 {
                     headers: {
@@ -57,7 +57,7 @@ export default function Testimonies ({ _id, title, summary, files, category, des
             <div className="testimonies">
                 <div className="testimony-card">
                     <Link to={`/post/${_id}`}>
-                        <img src={`http://localhost:4000/${files}`} alt={title} className="testimony-image" />
+                        <img src={`https://course-finder-app.onrender.com/${files}`} alt={title} className="testimony-image" />
                     </Link>
                     <h2>{title}</h2>
                     <div className="profile-card">

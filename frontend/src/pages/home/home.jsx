@@ -9,7 +9,7 @@ export default function Home(){
         React.useEffect(() => {
             async function fetchPosts() {
                 try {
-                    const response = await axios.get('http://localhost:4000/post', { withCredentials: true });
+                    const response = await axios.get('https://course-finder-app.onrender.com/post', { withCredentials: true });
                     setPosts(response.data);
                 } catch (error) {
                     console.error('Error fetching posts:', error);
