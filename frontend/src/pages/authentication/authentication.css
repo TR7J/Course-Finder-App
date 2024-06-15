@@ -33,7 +33,7 @@
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 8px;
-    max-width: 300px;
+    max-width: 400px;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -177,7 +177,7 @@
         background: rgba(255, 255, 255, 0.1);
         padding: 30px;
         border-radius: 8px;
-        min-width: 300px;
+        max-width: 300px;
         color: #fff;
         display: flex;
         flex-direction: column;
