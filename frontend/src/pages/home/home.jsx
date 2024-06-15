@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import '../home/home.css'
+import './home.css'
 import Testimonies from "../../components/testimonies/testimonies"
 import axios from 'axios';
 
@@ -22,7 +22,7 @@ export default function Home(){
         return (
             <div>
                 <div className="searchinput">
-                    <input type="text" placeholder="Search" onChange={(event) => {setSearch(event.target.value)}}/>
+                    <input type="text" placeholder="Search" onChange={(event) => {setSearch(event.target.value)}} className="search-bar"/>
                 </div>
 
                 <h1 className="title">Testimonies</h1>

@@ -9,6 +9,7 @@ import {Toaster} from 'react-hot-toast';
 import CreateBlog from './pages/createBlog/createBlog';
 import EditBlog from './pages/editBlog/editBlog';
 import SingleBlog from './pages/singleBlog/singleBlog';
+import Navbar from './components/navbar/navbar'
 
 
 /* BACKEND URL */
@@ -21,6 +22,7 @@ function App() {
     <div>
         <Toaster position='bottom-right' toastOptions={{duration: 2000}} />
         <BrowserRouter> 
+          <Navbar/>
           <Routes>
             <Route exact path='/Signup' element={<SignUp/>}/>
             <Route path='/LogIn' element={<Login/>}/>
