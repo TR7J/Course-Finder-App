@@ -38,7 +38,8 @@ app.use(
     cors({
         credentials: true,
         /* origin: 'http://localhost:3000' */
-        origin: 'https://course-finder-app-2.onrender.com'
+        /* origin: 'https://course-finder-app-2.onrender.com' */
+        origin: 'https://mern-front-1lvr.onrender.com'
     })
 )
 

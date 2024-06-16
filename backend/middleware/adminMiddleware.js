@@ -7,10 +7,7 @@ const authorizeAdmin = (req, res, next) => {
     next();
 }
 
-// Example usage in your routes
-
 router.get('/admin/dashboard', authorizeAdmin, (req, res) => {
-    // Only admin can access this route
+
 });
 
-/* Remember to include middleware to authenticate users before the authorization middleware. */
